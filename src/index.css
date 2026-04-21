@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  /* OKLAB ke bajaye seedha HEX use karo */
+  --color-bullish: #22c55e; 
+  --color-bearish: #ef4444;
+  --color-terminal: #050505;
+
+  --font-mono: "Share Tech Mono", monospace;
+  --font-sans: "Syne", sans-serif;
+}
+  
+  /* Base styles agar zaroorat ho */
+  body {
+    @apply bg-black text-white antialiased;
+  }
+
+  @media print {
+  .no-print, header, section, footer {
+    display: none !important;
+  }
+  #audit-report {
+    width: 100%;
+    background: white !important;
+    color: black !important;
+  }
+  /* Chart aur components ko visible rakhne ke liye */
+  * { -webkit-print-color-adjust: exact !important; }
+}
