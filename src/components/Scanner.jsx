@@ -42,7 +42,7 @@ const Scanner = ({ setAuditData, setLoading, loading }) => {
     } catch (err) {
       console.error(err);
       setStatusMsg('ERROR: CONNECTION FAILED');
-      alert("Backend Offline! Member 2 se bolo 'python main.py' chalao.");
+      alert("some thing went wrong");
     } finally {
       setLoading(false);
     }
